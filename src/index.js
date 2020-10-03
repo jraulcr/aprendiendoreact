@@ -1,17 +1,20 @@
+/*const element = document.createElement('h1')
+elemento.innerText = 'Hola mundo React'
+const container = document.getElementById('root')
+container.appendChild(element)*/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Card from './components/Card'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const container = document.getElementById('root')
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//ReactDOM.render(__QUE__, __DONDE__)
+
+ReactDOM.render(<Card
+                    title="Techniques Guides"
+                    description="Learn amazing street workout and calisthenics"
+                    img="https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06"
+                    leftColor="#A74CF2"
+                    rightColor="#617BFB"
+                    />, container)
